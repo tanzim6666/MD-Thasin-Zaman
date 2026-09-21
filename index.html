@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Thasin Zaman | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <img src="assets/logo.png" alt="TSV Logo" class="loader-logo">
+            <div class="loader-text">Loading Experience...</div>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Sound Toggle -->
+    <button class="sound-toggle" id="soundToggle" title="Toggle Sound Effects">
+        <i class="fas fa-volume-up" id="soundIcon"></i>
+    </button>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Particle Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="assets/logo.png" alt="TSV" class="nav-logo-img">
+                <span class="nav-logo-text">TSV</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-badge"><span class="badge-dot"></span> Available for Collaboration</div>
+                <h1 class="hero-greeting">Hello, I'm</h1>
+                <h1 class="hero-name">MD <span class="highlight">Thasin</span> Zaman</h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-prefix">I'm a </span>
+                    <span class="typing-text" id="typingText"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Founder of <strong>ThasinVerse</strong>. Making science education accessible, engaging, and enjoyable for students across Bangladesh through high-quality content.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Contact Me</a>
+                    <a href="https://www.youtube.com/@ThasinVerse71" target="_blank" class="btn btn-secondary"><i class="fab fa-youtube"></i> YouTube Channel</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.facebook.com/profile.php?id=61577811897349" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@ThasinVerse71" target="_blank" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/richard_feynman_tz" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/8801701131181" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-bg"></div>
+                    <img src="assets/logo2.png" alt="MD Thasin Zaman" class="hero-image">
+                    <div class="floating-badge badge-1"><i class="fas fa-atom"></i><span>Physics</span></div>
+                    <div class="floating-badge badge-2"><i class="fas fa-flask"></i><span>Chemistry</span></div>
+                    <div class="floating-badge badge-3"><i class="fas fa-calculator"></i><span>Math</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get To Know</span>
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image-wrapper">
+                    <img src="assets/logo2.png" alt="About Me" class="about-image">
+                    <div class="about-image-frame"></div>
+                    <div class="experience-badge">
+                        <span class="exp-number">3+</span>
+                        <span class="exp-text">Years of<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <h3 class="about-heading">A Dedicated Student & Content Creator</h3>
+                    <p class="about-text">I am MD Thasin Zaman, the founder of ThasinVerse. I create high-quality educational content covering Physics, Chemistry, and Mathematics for students from Class 6 to HSC level.</p>
+                    <p class="about-text">My mission is to break down complex scientific concepts into easy-to-understand explanations that help students truly understand and love science.</p>
+                    <div class="about-details">
+                        <div class="detail-item"><i class="fas fa-user"></i><span><strong>Name:</strong> MD Thasin Zaman</span></div>
+                        <div class="detail-item"><i class="fas fa-envelope"></i><span><strong>Email:</strong> thasinzaman21@gmail.com</span></div>
+                        <div class="detail-item"><i class="fas fa-phone"></i><span><strong>Phone:</strong> +880 1701-131181</span></div>
+                        <div class="detail-item"><i class="fas fa-map-marker-alt"></i><span><strong>Location:</strong> Bangladesh</span></div>
+                    </div>
+                    <a href="mailto:thasinzaman21@gmail.com" class="btn btn-primary"><i class="fas fa-download"></i> Download CV</a>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card" data-count="1000"><i class="fas fa-users stat-icon"></i><h3 class="stat-number">0+</h3><p class="stat-label">Students Helped</p></div>
+                <div class="stat-card" data-count="50"><i class="fas fa-video stat-icon"></i><h3 class="stat-number">0+</h3><p class="stat-label">Videos Created</p></div>
+                <div class="stat-card" data-count="100"><i class="fas fa-clock stat-icon"></i><h3 class="stat-number">0+</h3><p class="stat-label">Hours of Content</p></div>
+                <div class="stat-card" data-count="5"><i class="fas fa-star stat-icon"></i><h3 class="stat-number">0+</h3><p class="stat-label">Subjects Covered</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What I Know</span>
+                <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-left">
+                    <h3 class="skills-heading">Technical & Teaching Skills</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar"><div class="skill-info"><span>Physics Teaching</span><span>95%</span></div><div class="skill-progress"><div class="skill-fill" data-width="95"></div></div></div>
+                        <div class="skill-bar"><div class="skill-info"><span>Chemistry</span><span>90%</span></div><div class="skill-progress"><div class="skill-fill" data-width="90"></div></div></div>
+                        <div class="skill-bar"><div class="skill-info"><span>Mathematics</span><span>92%</span></div><div class="skill-progress"><div class="skill-fill" data-width="92"></div></div></div>
+                        <div class="skill-bar"><div class="skill-info"><span>Video Editing</span><span>85%</span></div><div class="skill-progress"><div class="skill-fill" data-width="85"></div></div></div>
+                    </div>
+                </div>
+                <div class="skills-right">
+                    <div class="skill-cards">
+                        <div class="skill-card"><div class="skill-icon"><i class="fas fa-chalkboard-teacher"></i></div><h4>Teaching</h4><p>Explaining complex topics simply</p></div>
+                        <div class="skill-card"><div class="skill-icon"><i class="fas fa-video"></i></div><h4>Video Production</h4><p>Creating HD educational content</p></div>
+                        <div class="skill-card"><div class="skill-icon"><i class="fas fa-atom"></i></div><h4>Science</h4><p>Deep understanding of core concepts</p></div>
+                        <div class="skill-card"><div class="skill-icon"><i class="fas fa-users"></i></div><h4>Leadership</h4><p>Building active learning communities</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="youtube">YouTube</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="youtube">
+                    <div class="project-image">
+                        <img src="https://img.youtube.com/vi/GbkZK74Hq1M/mqdefault.jpg" alt="Project">
+                        <div class="project-overlay">
+                            <a href="https://www.youtube.com/@ThasinVerse71" target="_blank" class="project-link"><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">YouTube</span>
+                        <h3 class="project-title">Physics Chapter 7 Oneshot</h3>
+                        <p class="project-desc">Complete revision of Waves & Sound for SSC students.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="youtube">
+                    <div class="project-image">
+                        <img src="https://img.youtube.com/vi/SGTDSkbarSk/mqdefault.jpg" alt="Project">
+                        <div class="project-overlay">
+                            <a href="https://www.youtube.com/@ThasinVerse71" target="_blank" class="project-link"><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">YouTube</span>
+                        <h3 class="project-title">Bohr's Formula Explained</h3>
+                        <p class="project-desc">How mvr = nh/2π was derived - complete explanation.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="education">
+                    <div class="project-image">
+                        <img src="https://img.youtube.com/vi/qX2j73eeJUc/mqdefault.jpg" alt="Project">
+                        <div class="project-overlay">
+                            <a href="https://www.youtube.com/@ThasinVerse71" target="_blank" class="project-link"><i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Education</span>
+                        <h3 class="project-title">Class 6 Science - Light</h3>
+                        <p class="project-desc">Complete chapter on Light phenomena for Class 6.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Journey</span>
+                <h2 class="section-title">Education & <span class="highlight">Experience</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3 class="timeline-title">Higher Secondary Education (HSC)</h3>
+                        <h4 class="timeline-subtitle">Science Group</h4>
+                        <p class="timeline-desc">Pursuing HSC with focus on Physics, Chemistry, and Mathematics while running ThasinVerse.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - Present</span>
+                        <h3 class="timeline-title">Founder - ThasinVerse</h3>
+                        <h4 class="timeline-subtitle">Educational YouTube Channel</h4>
+                        <p class="timeline-desc">Created 50+ videos covering Physics, Chemistry, Math, and Biology for Bangladeshi students.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 - 2024</span>
+                        <h3 class="timeline-title">Secondary Education (SSC)</h3>
+                        <h4 class="timeline-subtitle">Science Group</h4>
+                        <p class="timeline-desc">Completed SSC with outstanding results in science subjects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's Work Together</h3>
+                    <p class="contact-description">Have a question or collaboration idea? Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text"><h4>Email</h4><a href="mailto:thasinzaman21@gmail.com">thasinzaman21@gmail.com</a></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text"><h4>Phone</h4><a href="tel:+8801701131181">+880 1701-131181</a></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="contact-text"><h4>WhatsApp</h4><a href="https://wa.me/8801701131181" target="_blank">Message on WhatsApp</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3 class="form-title">Send Me a Message</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message"><i class="fas fa-comment"></i> Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="TSV" class="footer-logo">
+                <h3>MD Thasin Zaman</h3>
+                <p>Student | Content Creator | Founder of ThasinVerse</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Me</h4>
+                <div class="footer-social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61577811897349" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@ThasinVerse71" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/richard_feynman_tz" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MD Thasin Zaman. All Rights Reserved. | Made with <i class="fas fa-heart" style="color: #ff4757;"></i> in Bangladesh</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
